@@ -1,0 +1,19 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px;
+    cursor: pointer;
+    background-color: grey;
+}
+
+input {
+    opacity: 0;
+}
+
+input:checked + label {
+    font-style: italic;
+    background-color: #FBD089;
+}
