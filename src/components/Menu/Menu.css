@@ -17,3 +17,8 @@ input:checked + label {
     font-style: italic;
     background-color: #FBD089;
 }
+
+.selected {
+    background-color: white;
+    font-style: italic;
+}

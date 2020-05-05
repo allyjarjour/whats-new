@@ -1,32 +1,20 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './Menu.css'
 
-class Menu extends Component {
-    constructor() {
-        super()
-        this.state = {
-            selectedTheme: ''
-        }
-    }
-    handleChange = (e) => {
-        console.log(e.target);
-        
-    }
-    render() {
-        return (
-            <aside>
-                <h1>What's New?</h1>
-                <form>
-                    <label><input type="radio" name="theme" value="local" checked onChange={this.handleChange} />Local</label>
-                    <label><input type="radio" name="theme" value="entertainment" onChange={this.handleChange} />Entertainment</label>
-                    <label><input type="radio" name="theme" value="health" onChange={this.handleChange} />Health</label>
-                    <label><input type="radio" name="theme" value="science"onChange={this.handleChange} />Science</label>
-                    <label><input type="radio" name="theme" value="technology" onChange={this.handleChange} />Technology</label>
-                </form>
-            </aside>
-        )
+const Menu = (props) => {
 
-    }
+    return (
+        <aside>
+            <h1>What's New?</h1>
+            <form>
+                <label style={{backgroundColor: props.selected === 'local' ? 'orange' : 'grey'}}><input type="radio" name="theme" value="local" onChange={props.handleSelection} />Local</label>
+                <label style={{backgroundColor: props.selected === 'entertainment' ? 'orange' : 'grey'}}><input type="radio" name="theme" value="entertainment" onChange={props.handleSelection} />Entertainment</label>
+                <label style={{backgroundColor: props.selected === 'health' ? 'orange' : 'grey'}}><input type="radio" name="theme" value="health" onChange={props.handleSelection} />Health</label>
+                <label style={{backgroundColor: props.selected === 'science' ? 'orange' : 'grey'}}><input type="radio" name="theme" value="science"onChange={props.handleSelection} />Science</label>
+                <label style={{backgroundColor: props.selected === 'technology' ? 'orange' : 'grey'}}><input type="radio" name="theme" value="technology" onChange={props.handleSelection} />Technology</label>
+             </form>
+         </aside>
+    )
 }
 
 export default Menu;
