@@ -1,0 +1,7 @@
+.news-container {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: flex-start;
+}

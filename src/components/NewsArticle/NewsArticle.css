@@ -1,0 +1,16 @@
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.news-article {
+    width: 30%;
+    border: 1px black solid;
+    margin: 15px;
+}
+
+h2, 
+p {
+    margin: 15px;
+}
