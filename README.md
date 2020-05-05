@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # What's New?
 
 This application was built with `create-react-app`.
@@ -62,3 +63,6 @@ Here is what the endpoint looks like to get the news data.
 | Get all news data | `https://whats-new-api.herokuapp.com/api/v1/news` | GET | none | `{"entertainment": [{}, {}, ...], "health": [{}, {}, ...], ...}` |
 
 **Note: This will likely break some of your previous tests.  No worries, we will discuss testing async functionality in a future lesson.**
+=======
+# whats-new
+>>>>>>> 0bf8d67b128194e22af817e9b41e076b0d957658
