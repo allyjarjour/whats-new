@@ -3,10 +3,20 @@ form {
     flex-direction: column;
 }
 
-label {
+aside {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    width: 300px;
+}
+
+.menu label {
     margin: 10px;
     cursor: pointer;
     background-color: grey;
+    padding: 10px;
 }
 
 input {
