@@ -19,7 +19,6 @@ class App extends Component {
       health,
       entertainment,
       selected: 'local',
-      //add items to display, this will replace the topics
       searchInput: '',
       filteredSelection: null
     }
@@ -28,12 +27,9 @@ class App extends Component {
   filterSelection = (searchTerm) => {
     let filtered = null;
     let selectedTheme = this.state.selected
-    if (searchTerm.length > 0) {
-      console.log('cats');
+    if (searchTerm.length) {
       filtered = this.state[selectedTheme].filter(story => {
-        if (story.headline.includes(searchTerm)) {
-          return story
-        }
+        return story.headline.toLowerCase().includes(searchTerm.toLowerCase())
       })
       this.setState({
         filteredSelection: filtered
@@ -45,15 +41,15 @@ class App extends Component {
     let {value} = e.target   
     this.setState({
       selected: value
-    })    
+    })  
+    this.handleReset();  
   }
 
-  handleSearch = (e) => {
-    const searchTerm = e.target.parentNode.childNodes[0].value;
+  handleSearch = (input) => {
     this.setState({
-      searchInput: searchTerm
+      searchInput: input
     }) 
-    this.filterSelection(searchTerm);
+    this.filterSelection(input);
   }
 
   handleReset = () => {
@@ -68,9 +64,9 @@ class App extends Component {
       <div className="app">
         <SearchForm 
           articleTheme={this.state.selected} 
+          searchInput={this.state.searchInput} 
           handleSearch={this.handleSearch}
           handleReset={this.handleReset}
-          searchInput={this.state.searchInput} 
         />
         <Menu 
           selected={this.state.selected} 
@@ -79,7 +75,6 @@ class App extends Component {
         <NewsContainer 
           selectedTheme={this.state[selectedTheme]} 
           filteredSelection={this.state.filteredSelection} 
-          // switch above out with return from filter function
           searchInput={this.state.searchInput} 
         />
       </div>

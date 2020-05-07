@@ -5,25 +5,24 @@ import PropTypes from 'prop-types';
 
 
 const NewsContainer = (props) => {
-    const loadContent = (content) => content.map(prop => {
+    const loadContent = (articles) => articles.map(article => {
         return <NewsArticle 
-            key={prop.id}
-            articleID={prop.id} 
-            headline={prop.headline} 
-            imgURL={prop.img} 
-            description={prop.description} 
-            articleURL={prop.url} />
+            {...article}
+            key={article.id}
+            />
     })
     return (
         <section className="news-container">
-            {props.searchInput.length === 0 ? loadContent(props.selectedTheme) : 
+            {!props.searchInput.length ? loadContent(props.selectedTheme) : 
             loadContent(props.filteredSelection)}
         </section>
     );
 }
 
-NewsContainer.propsTypes = {
-    selectedTheme: PropTypes.array
+NewsContainer.propTypes = {
+    selectedTheme: PropTypes.array,
+    filteredSelection: PropTypes.array,
+    searchInput: PropTypes.string
 }
 
 export default NewsContainer;

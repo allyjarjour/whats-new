@@ -1,4 +1,4 @@
-form {
+.menu {
     display: flex;
     flex-direction: column;
 }
@@ -19,7 +19,7 @@ aside {
     padding: 10px;
 }
 
-input {
+.menu input {
     opacity: 0;
 }
 

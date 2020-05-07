@@ -11,10 +11,10 @@
 .search-input {
     margin-top: 20px;
     margin-left: 30%;
-    height: 50px;
+    height: 40px;
     width: 40%;
     background-color: white;
-    /* z-index: 1; */
+    z-index: 1;
 }
 
 .search-form button {
