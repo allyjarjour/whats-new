@@ -1,5 +1,6 @@
 import React from 'react';
 import './Menu.css'
+import PropTypes from 'prop-types';
 
 const Menu = (props) => {
 
@@ -15,6 +16,11 @@ const Menu = (props) => {
              </form>
          </aside>
     )
+}
+
+Menu.propTypes = {
+    selected: PropTypes.string,
+    handleSelection: PropTypes.func
 }
 
 export default Menu;
