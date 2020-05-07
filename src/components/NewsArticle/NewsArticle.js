@@ -9,7 +9,7 @@ const NewsArticle = (props) => {
             <img className="article-pic" src={img} alt={description} />
             <h2>{headline}</h2>
             <p>{description}</p>
-            <p><a href={url}>Read full article here</a></p>
+            <p className="link"><a href={url}>Read full article here</a></p>
         </div>
     )
 }
