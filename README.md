@@ -12,7 +12,8 @@ Clone down this repo.
 4. Run `npm start` to start up your React server. (You will see errors!)
 
 
-![gif of app](https://user-images.githubusercontent.com/52683607/81361878-c903f880-909c-11ea-8ff0-35720999b18a.gif)
-
 ![screen shot of app](https://user-images.githubusercontent.com/52683607/81361926-e0db7c80-909c-11ea-8981-fb64b56ef33d.png)
 ![screen shot of app](https://user-images.githubusercontent.com/52683607/81361924-df11b900-909c-11ea-8dd7-cc5a86a39ed6.png)
+
+![gif of app](https://user-images.githubusercontent.com/52683607/81361878-c903f880-909c-11ea-8ff0-35720999b18a.gif)
+
