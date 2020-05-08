@@ -13,8 +13,9 @@ This application was built with `create-react-app`. I was tasked with creating a
 
 ### Check it out below
 
-![screen shot of app](https://user-images.githubusercontent.com/52683607/81361926-e0db7c80-909c-11ea-8981-fb64b56ef33d.png)
 ![screen shot of app](https://user-images.githubusercontent.com/52683607/81361924-df11b900-909c-11ea-8dd7-cc5a86a39ed6.png)
+
+![screen shot of app](https://user-images.githubusercontent.com/52683607/81361926-e0db7c80-909c-11ea-8981-fb64b56ef33d.png)
 
 ![gif of app](https://media.giphy.com/media/h4gRPngQuukgUBIGvq/giphy.gif)
 
