@@ -7,10 +7,10 @@
 
 .news-article {
     width: 30%;
+    min-width: 325px;
     margin: 15px;
     background-color: white;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
-    /* position: relative; */
 }
 
 h2, 
@@ -31,7 +31,10 @@ a {
 
 .link {
     text-align: center;
-    /* margin-top: 40px; */
-    /* position: relative; */
-    /* bottom: 0; */
+    margin-top: 35px;
+    font-style: italic;
+}
+
+.link:hover {
+    color: #f5ad8c;
 }
