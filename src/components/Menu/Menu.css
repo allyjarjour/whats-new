@@ -10,8 +10,7 @@ aside {
     top: 0;
     background-color: white;
     z-index: 1;
-    width: 20%;
-    min-width: 275px;
+    width: 350px;
 }
 
 .menu label {
