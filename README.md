@@ -3,6 +3,7 @@
 ### Abstract
 
 I was tasked with creating a news app that allows users to choose a topic to browse relevant articles. Users can also search articles based on keywords in the title. I tested the app with Jest and the React Testing Library to ensure proper functionality.
+Check out the GitHub pages here: https://allyjarjour.github.io/whats-new/
 
 ### Technologies Used
 - React
