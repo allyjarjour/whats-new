@@ -4,12 +4,10 @@ This application was built with `create-react-app`. I was tasked with creating a
 
 ### Set Up
 
-Clone down this repo.
-
-1. On GitHub, create a new, empty repository and name it something like 'whats-new'.
-2. Update the current remote (called "origin") so that it points at the URL of the repository you just created on GitHub. Read how to do this [here](https://help.github.com/en/articles/changing-a-remotes-url).
-3. Once you've updated the remote, you should run `npm install`, commit, and then push your initial commit to your personal repository. You will need to use the `-u` flag when you push (like this: `git push -u origin master`).
-4. Run `npm start` to start up your React server. (You will see errors!)
+1. Fork this repo.
+2. Clone your forked repository.
+3. Run `npm install`, commit, and then push your initial commit to your remote repository. 
+4. Run `npm start` to start up your React server. 
 
 
 ![screen shot of app](https://user-images.githubusercontent.com/52683607/81361926-e0db7c80-909c-11ea-8981-fb64b56ef33d.png)
